@@ -6,4 +6,5 @@ from django.http import HttpResponse
 def index(request):
     return render(request,"index.html")
 
+
 #index.html file is the HTML for landing page file is located in the templates.

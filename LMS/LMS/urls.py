@@ -20,4 +20,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include("landing_page.urls")),
+    path('subject_selection',include("subject_selection.urls")),
+    
 ]
