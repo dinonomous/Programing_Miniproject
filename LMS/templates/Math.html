@@ -7,6 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
     <style>
+
+        .col-md-10 {
+            width: auto;
+            padding-left: 230px; 
+        }
+
+        .col-md-2 {
+            flex: 0 0 auto;
+            width: 210px;
+            min-height: 100vh;
+        }
+
+        .container-fluid {
+            padding-left: 0;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -23,30 +39,24 @@
             object-fit: cover;
         }
 
-        .sidebar-sticky {
-            background-color: rgb(28, 102, 84);
-            height: 100vh;
-            position: fixed;
-            z-index: 1;
-        }
-
         .row {
             margin-left: 0;
             margin-right: 0;
-            height: 100vh;
             display: flex;
         }
 
         .nav-link {
             color: rgb(28, 102, 84);
         }
+
         .bg-light {
-            background-color: rgb(28, 102, 84)!important;
+            background-color: rgb(28, 102, 84) !important;
         }
 
         .main-content {
             flex-grow: 1;
-            padding-top: 56px;
+            padding-top: 20px;
+            padding-right: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -57,7 +67,7 @@
         button {
             margin: 0;
             color: white;
-            background-color: rgb(28, 102, 84);
+            background-color: rgb(78, 102, 84);
             border-style: solid;
             border-radius: 10px;
             width: 150px;
@@ -67,60 +77,54 @@
         }
 
         button:hover {
-            background-color: rgb(3, 31, 20);
+            background-color: rgb(3, 23, 20);
             border-width: 2px;
-        }
-
-        video, iframe {
-            max-width: 100%;
-            max-height: 100%;
         }
     </style>
 </head>
 
 <body>
     <div class="background">
-        <img src="backgroundimage.jpeg" alt="Background Image" class="background">
+        <img src="static/backgroundimage.jpeg" alt="Background Image" class="background">
     </div>
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 bg-light sidebar">
+            <nav class="col-md-2 bg-light sidebar fixed-top" style="height: 100vh;">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="/subject_selection">
                                 <button><span data-feather="home"></span>
-                                Subject selection</button>
-                            </a>
+                                    Subject selection</button></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <button><span data-feather="file"></span>
-                                Unit 1</button>
+                                    Unit 1</button>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <button><span data-feather="shopping-cart"></span>
-                                Unit 2</button>
+                                    Unit 2</button>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <button><span data-feather="users"></span>
-                                Unit 2</button>
+                                    Unit 2</button>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <button><span data-feather="bar-chart-2"></span>
-                                Unit 3</button>
+                                    Unit 3</button>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <button><span data-feather="layers"></span>
-                                Unit 4</button>
+                                    Unit 4</button>
                             </a>
                         </li>
                     </ul>
@@ -128,12 +132,13 @@
             </nav>
 
             <main role="main" class="col-md-10 main-content">
-                <div>
-                    <video controls width="600">
-                        <source src="unit1_1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <iframe src="sample-document.pdf" width="800" height="600"></iframe>
+                <div style="width: 100%; height: 100%">
+                    <div style="position: relative; padding-bottom: 56.25%; overflow: hidden; width: 100%; height: 100%;">
+                        <iframe style="margin-bottom: 30px; border-radius: 10px; position: absolute; width: 100%; height: 100%; top: 0; left: 0;" src="https://www.youtube.com/embed/cJ38W_A9Ivc?autoplay=1&mute=1" allowfullscreen></iframe>
+                    </div>
+                    <div style="margin-top: 20px; height: 1000px; border-radius: 10px;">
+                        <iframe class="pdfreader" style="width: 100%; height: 100%; border-radius: 10px;" src="https://ms.unimelb.edu.au/__data/assets/pdf_file/0007/2516596/functions_sev_var.pdf"></iframe>
+                    </div>
                 </div>
             </main>
         </div>
