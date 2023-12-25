@@ -22,6 +22,7 @@ urlpatterns = [
     path('',include("landing_page.urls")),
     path('subject_selection',include("subject_selection.urls")),
     path('Math/',include("Math.urls")),
+    path('EGD/',include("EGD.urls")),
     path('Che',include("Chemistry.urls")),
     path('Phy',include("Physics.urls")),
 ]

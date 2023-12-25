@@ -1,87 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
-    <style>
-
-        .col-md-10 {
-            width: auto;
-            padding-left: 230px; 
-        }
-
-        .col-md-2 {
-            flex: 0 0 auto;
-            width: 210px;
-            min-height: 100vh;
-        }
-
-        .container-fluid {
-            padding-left: 0;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
-
-        .background {
-            background-image:url(https://images.hdqwalls.com/wallpapers/misty-mountains-abstract-5k-27.jpg);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            object-fit: cover;
-        }
-
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-            display: flex;
-        }
-
-        .nav-link {
-            color: rgb(28, 102, 84);
-        }
-
-        .bg-light {
-            background-color: rgb(28, 102, 84) !important;
-        }
-
-        .main-content {
-            flex-grow: 1;
-            padding-top: 20px;
-            padding-right: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100%;
-        }
-
-        button {
-            margin: 0;
-            color: white;
-            background-color: rgb(78, 102, 84);
-            border-style: solid;
-            border-radius: 10px;
-            width: 150px;
-            height: 40px;
-            margin-top: 15px;
-            transition: background-color 0.15s;
-        }
-
-        button:hover {
-            background-color: rgb(3, 23, 20);
-            border-width: 2px;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'Math/css/Math.css' %}">
 </head>
 
 <body>
@@ -128,11 +55,20 @@
 
             <main role="main" class="col-md-10 main-content">
                 <div style="width: 100%; height: 100%">
-                    <div style="position: relative; padding-bottom: 56.25%; overflow: hidden; width: 100%; height: 100%;">
-                        <iframe style="margin-bottom: 30px; border-radius: 10px; position: absolute; width: 100%; height: 100%; top: 0; left: 0;" src="https://www.youtube.com/embed/cJ38W_A9Ivc?autoplay=1&mute=1" allowfullscreen></iframe>
+                    <div class="outer">
+                        <div class="video_frame">
+                            <iframe src="https://www.youtube.com/embed/cJ38W_A9Ivc?autoplay=1&mute=1" allowfullscreen class="vido"></iframe>
+                        </div>
+                        <div class="side_pannel">
+                            <div class="side_menue">
+                                <div>
+                                    <a href="">WEEK-1</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div style="margin-top: 20px; height: 1000px; border-radius: 10px;">
-                        <iframe class="pdfreader" style="width: 100%; height: 100%; border-radius: 10px;" src="https://ms.unimelb.edu.au/__data/assets/pdf_file/0007/2516596/functions_sev_var.pdf"></iframe>
+                    <div class="PDFframe">
+                        <iframe class="pdfreader" src="https://ms.unimelb.edu.au/__data/assets/pdf_file/0007/2516596/functions_sev_var.pdf"></iframe>
                     </div>
                 </div>
             </main>

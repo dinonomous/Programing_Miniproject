@@ -13,6 +13,8 @@
     }
     
     button {
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin: 0;
         margin-left: 10px; 
         color: white;
@@ -20,7 +22,7 @@
         border-style: solid;
         border-radius: 10px;
         width: 150px;
-        height: 40px;
+        min-height: 70px;
         margin-top: 30px;
         transition: background-color 0.15s;
     }
@@ -36,17 +38,49 @@
         letter-spacing: px;color:#FFFFFF;
         font-size:90px;
     }
+    .hedding{
+        min-width: 300px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .buttons{
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+        max-width: 680px;
+        border-radius: 10px;
+        margin-top: 0px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
 </style>
 
-<div>
-<h1>select your subject</h1>
-<div style="display: flex;
-            flex-direction: row;
-            justify-content:center;
-            justify-content: center;
-            align-items:center;">
-            <a href="Math/Unit_1"><button>Math</button></a>
-            <a href="Phy"><button>Physics</button></a>
+<div class="main">
+    <div class="hedding">
+        <h1>select your subject</h1>
+    </div>
+    
+    <div class="buttons">
+            <a href="Math/Unit_1"><button>Math ( Calculus and Linear Algebra )</button></a>
+            <a href="Phy"><button>EEE ( Electrical and Electronics Engineering</button></a>
             <a href="Che"><button>Chemistry</button></a>
-</div>
+            <button>Semiconductor Physics</button>
+            <button>PPS ( Programming for Problem Solving ) </button>
+            <button>Object Oriented Design and Programming</Object></button>
+            <a href="EGD/week1"><button>EGD ( Engineering Graphics and Design )</button></a>
+            <button>Chinese</button>
+            <button>French</button>
+            <button>German</button>
+            <button>Japanese</button>
+            <button>Korean</button>
+            <button>Spanish</button>
+    </div>
 </div>
