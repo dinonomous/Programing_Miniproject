@@ -165,23 +165,52 @@ button:hover {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .side_menue p {
     margin-bottom: 10px;
     margin-top: 0px;
     padding-top: 1px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 10px;
+}
+.pdf{
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    transition: height 0.7s;
+    
+    
+    overflow: hidden; /* Hide the content that overflows */
+    position: relative;
+}
+.para{
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.pdf:hover{
+    height: 1000px;
+    border-radius: 10px;
+}
+.pdfframe {
     overflow: hidden;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.PDFframe{
-    margin-top: 20px; 
-    height: 1000px; 
+
+.pdfiframe{
+    width: 97%;
+    height: 100%;
+    border: none;
     border-radius: 10px;
-}
-.pdfreader{
-    width: 100%; 
-    height: 100%; 
-    border-radius: 10px;
+    margin-left: 3%;
 }
