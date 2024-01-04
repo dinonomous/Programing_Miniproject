@@ -24,6 +24,6 @@ urlpatterns = [
     path('Math/',include("Math.urls")),
     path('EGD/',include("EGD.urls")),
     path('Che',include("Chemistry.urls")),
-    path('Phy',include("Physics.urls")),
+    path('EEE/',include("Physics.urls")),
     path('Scp/',include("Scp.urls")),
 ]
