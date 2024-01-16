@@ -22,3 +22,13 @@ def unit1(request):
 
     # Render the HTML template with the data
     return render(request, 'computationalBiology.html', context)
+##################################################################################################################################
+
+def unit2(request):
+    pass
+def unit3(request):
+    pass    
+def unit4(request):
+    pass
+def unit5(request):
+    pass

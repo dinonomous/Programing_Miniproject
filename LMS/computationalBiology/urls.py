@@ -1,6 +1,6 @@
-from Chemistry import views
 from django.contrib import admin
 from django.urls import path,include
+from computationalBiology import views
 
 urlpatterns = [
     path('Unit_1',views.unit1,name="scpunit1"),

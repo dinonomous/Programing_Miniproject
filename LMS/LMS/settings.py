@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ks*emza#t*p90gr5lt93$o88tkcue&)f3r%hd5r(_m1ky7*&5x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.135',]
+ALLOWED_HOSTS = ['192.168.0.135','127.0.0.1','192.168.29.213']
 
 
 # Application definition
@@ -127,6 +127,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'EGD', 'static'),
     os.path.join(BASE_DIR, 'Scp', 'static'),
     os.path.join(BASE_DIR, 'Physics', 'static'),
+    os.path.join(BASE_DIR, 'Chemistry', 'static'),
+    os.path.join(BASE_DIR, 'computationalBiology', 'static'),
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
