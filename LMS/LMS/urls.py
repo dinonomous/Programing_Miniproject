@@ -23,8 +23,9 @@ urlpatterns = [
     path('subject_selection',include("subject_selection.urls")),
     path('Math/',include("Math.urls")),
     path('EGD/',include("EGD.urls")),
-    path('Che',include("Chemistry.urls")),
+    path('Che/',include("Chemistry.urls")),
     path('EEE/',include("Physics.urls")),
     path('Scp/',include("Scp.urls")),
     path('computationalBiology/',include("computationalBiology.urls")),
+    path('underconstruction',include("UnderConstruction.urls")),
 ]
