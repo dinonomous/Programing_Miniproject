@@ -13,8 +13,7 @@ def unit1(request):
         {"title": "* Cell Differentiation and Stem cell", "url": "https://www.youtube.com/embed/t3g26p9Mh_k?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Hand Writen Notes", "path": "/static/computationalBiology/videos/UNIT1/hand.pdf"},
-        {"name": "Material", "path": "/static/computationalBiology/videos/UNIT1/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1JeVaJdGZXo7Dv8sgFKxFWqF83rAR3Wo6/preview"},
     ]
 
     # Pass the videos to the template
