@@ -22,7 +22,7 @@ def unit1(request):
     ]
     PDF = [
         
-        {"name": "Material", "path": "/static/physics/videos/UNIT1/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1ZTU9s3n6zktr44lhdUKiDnkyIXr1A5ZG/preview"},
     ]
 
     # Pass the videos to the template
@@ -55,7 +55,7 @@ def unit2(request):
         {"title": "* Karnaugh Map (K-map)", "url": "https://www.youtube.com/embed/lw1STgKUpW0?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Material", "path": "/static/physics/videos/UNIT2/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1qjRs7SR6MVvj6Doh-rkUB7JPRDWN1Vev/preview"},
     ]
 
     # Pass the videos to the template
@@ -78,7 +78,7 @@ def unit3(request):
     ]
     PDF = [
         
-        {"name": "Material", "path": "/static/physics/videos/UNIT3/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1Tsuwsjv4mJzJUMrfNnZBV71aXypUbpxQ/preview"},
     ]
 
     # Pass the videos to the template
@@ -110,7 +110,7 @@ def unit4(request):
         {"title": "* Biosensors", "url": "https://www.youtube.com/embed/nxySi4rJkQE?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Material", "path": "/static/physics/videos/UNIT4/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1h20bZ7ufTeEG852u4QO5uXhSGLMYzA_w/preview"},
     ]
 
     # Pass the videos to the template
@@ -132,7 +132,7 @@ def unit5(request):
     ]
     PDF = [
         
-        {"name": "Material", "path": "/static/physics/videos/UNIT5/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1_gnj3eoi9iSLFSgh2IL3kD90KBM-UQzm/preview"},
     ]
 
     # Pass the videos to the template

@@ -14,8 +14,8 @@ def unit1(request):
         {"title": "* Fermi level Energy", "url": "https://www.youtube.com/embed/XCgCPWCN4qA?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Hand Writen Notes", "path": "/static/Scp/videos/UNIT1/hand.pdf"},
-        {"name": "Material", "path": "/static/Scp/videos/UNIT1/1.pdf"},
+        {"name": "Hand Writen Notes", "path": "https://drive.google.com/file/d/1Mz5crrUBjrRgCw2XfZGzDw6JGKpL-zGz/preview"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1EpCP3eDKLddpEn2Jg5SmSmV1iKSeyBGS/preview"},
     ]
 
     # Pass the videos to the template
@@ -43,7 +43,7 @@ def unit2(request):
         {"title": "* OLED (Organic Light Emitting Diode)", "url": "https://www.youtube.com/embed/AlAxPD3W4tc?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Material", "path": "/static/Scp/videos/UNIT2/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1sKKSW9jAM2ghsr2lhDJjYmsbVWInw4Dy/preview"},
     ]
 
     # Pass the videos to the template
@@ -64,8 +64,8 @@ def unit3(request):
         {"title": "* Optical Loss (Causes & Remedy)", "url": "https://www.youtube.com/embed/Zno9Y5Oi1SM?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Hand Writen Notes", "path": "/static/Scp/videos/UNIT3/hand.pdf"},
-        {"name": "Material", "path": "/static/Scp/videos/UNIT3/1.pdf"},
+        {"name": "Hand Writen Notes", "path": "https://drive.google.com/file/d/1W6uRDIGqINmh8a2IvxicGt-FtHjU81EZ/preview"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1unV63lasZsJM_pQarEDWeW9V1Fg93BuY/preview"},
     ]
 
     # Pass the videos to the template
@@ -87,7 +87,7 @@ def unit4(request):
         {"title": "* Monte Carlo Methods", "url": "https://www.youtube.com/embed/feeYe0NRXVo?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Material", "path": "/static/Scp/videos/UNIT4/1.pdf"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/109Q_Hf6-Bmailm5zGYLnEdVCcfIZHozm/preview"},
     ]
 
     # Pass the videos to the template
@@ -108,8 +108,8 @@ def unit5(request):
         {"title": "* Atomic Force Microscope (AFM)", "url": "https://www.youtube.com/embed/xnOqahYA6NU?autoplay=0&mute=1"},
     ]
     PDF = [
-        {"name": "Hand Writen Notes", "path": "/static/Scp/videos/UNIT5/hand.pdf"},
-        {"name": "Material", "path": "/static/Scp/videos/UNIT5/1.pdf"},
+        {"name": "Hand Writen Notes", "path": "https://drive.google.com/file/d/1NBKvXFzRlqbUzdgQD554UAgxV1isQO8M/preview"},
+        {"name": "Material", "path": "https://drive.google.com/file/d/1je6x4uK7VixF-AcXG6lvvdoCGtAC9YFW/preview"},
     ]
 
     # Pass the videos to the template

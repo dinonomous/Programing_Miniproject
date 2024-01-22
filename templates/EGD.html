@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'EGD/css/EGD.css' %}">
-    <script src="{% static 'EGD/js/sidepannel.js' %}"></script>
+    
 </head>
 
 <body>
@@ -105,43 +105,19 @@
             <main role="main" class="col-md-10 main-content">
                 <div style="width: 100%; height: 100%">
                     <div class="outer">
-                        <div class="video_frame">
-                            <video id="videoPlayer" width="100%" height="100%" controls>
-                                <source id="videoSource" src="{{ videos.0.url }}" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                            <div class="video_frame">
+                                <iframe id="videoIframe" src="{{ videos.0.url }}" allowfullscreen class="vido"></iframe>
+                            </div>
                         <div class="side_pannel">
-                            <div class="side_menue">
+                            <div class="side_menue" onclick="changeVideo(event)">
                                 {% for video in videos %}
                                     <div>
-                                        <p><a href="#" data-video-url="{{ video.url }}" onclick="changeVideoSource('{{ video.url }}')">{{ video.title }}</a></p>
+                                        <p><a href="#" data-video-url="{{ video.url }}">{{ video.title }}</a></p>
                                     </div>
                                 {% endfor %}
                             </div>
                         </div>
                     </div>
-                    
-                    <script>
-                        function changeVideoSource(videoUrl) {
-                            var videoPlayer = document.getElementById('videoPlayer');
-                            videoPlayer.pause(); // Pause the current video
-                            videoPlayer.innerHTML = ''; // Clear the existing source elements
-                    
-                            var source = document.createElement('source');
-                            source.src = videoUrl;
-                            source.type = 'video/mp4';
-                    
-                            videoPlayer.appendChild(source);
-                            videoPlayer.load();
-                            videoPlayer.play(); // Auto-play the new video
-                        }
-                    
-                        // Set the initial video source during page load
-                        document.addEventListener("DOMContentLoaded", function() {
-                            changeVideoSource('{{ videos.0.url }}');
-                        });
-                    </script>
                     
                     <div class="PDFframe">
                         <iframe class="pdfreader" src="{% for video in videos %}{% if 'PDF' in video %}{{ video.PDF }}{% endif %}{% endfor %}"></iframe>
@@ -151,6 +127,7 @@
         </div>
     </div>
 
+    <script src="{% static 'EGD/js/sidepannel.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoJtKh7z7lGz7fuP4F8nfdFvAOA6Gg/z6Y5J6XqqyGXYM2ntX" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xMp9MvcJ4C2V+4502jf2v1h" crossorigin="anonymous"></script>
 </body>
