@@ -105,12 +105,9 @@
             <main role="main" class="col-md-10 main-content">
                 <div style="width: 100%; height: 100%">
                     <div class="outer">
-                        <div class="video_frame">
-                            <video id="videoPlayer" width="100%" height="100%" controls>
-                                <source id="videoSource" src="{{ videos.0.url }}" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                            <div class="video_frame">
+                                <iframe id="videoIframe" src="{{ videos.0.url }}" allowfullscreen class="vido"></iframe>
+                            </div>
                         <div class="side_pannel">
                             <div class="side_menue">
                                 {% for video in videos %}
