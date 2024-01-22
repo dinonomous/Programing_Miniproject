@@ -6,8 +6,3 @@ function changeVideo(event) {
         document.getElementById('videoIframe').src = videoUrl;
     }
 }
-function changeVideoSource(event, videoUrl) {
-    event.preventDefault();
-    document.getElementById('videoSource').src = videoUrl;
-    document.getElementById('videoPlayer').load();
-}
