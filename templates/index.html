@@ -1,61 +1,154 @@
+<!DOCTYPE html>
 <html>
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <title>SRM Launchpad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
     <style>
+    
         p {
-            padding-left: 70px; /* Adjust the value as needed */
-            padding-right: 70px; /* Adjust the value as needed */
-            font-family: Arial, sans-serif; /* Change the font family here */
+            font-family: Ubuntu,Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .heading{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+            color: white;
+        }
+
+        .web-logo{
+            width: 70px;
+            vertical-align: middle;
+        }
+
+        .git {
+            width: 30px;
+            vertical-align: middle;
+            border-radius: 100px;
+            cursor: pointer;
+            margin-left: 7px;
+        }
+
+        .insta {
+            width: 30px;
+            margin-left: 1390px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .left{
+            background-color: rgb(44, 43, 44);
+        }
+
+        a:visited { 
+            text-decoration: none; 
+            color: rgb(44, 43, 44); 
+        }
+
+        .prob{
+            display: inline-block;
+            font-size: 70px;
+            padding-left: 250px;
+            padding-top: 150px;
+            margin-bottom: 20px;
+        }
+
+        .cum{
+
+            font-size: 50px;
+            padding-left: 250px;
+            margin-top: 0;
+            margin-bottom: 30px;
+
+        }
+
+        .desc{
+            padding-left: 260px;
+        }
+
+        .web-bg{
+            width: 1005px;
+            height: 900px;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+
+        .left-body{
+            width: 700px;
+            display: inline-block;
+            
+        }
+
+        button{
+            background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+            text-transform: uppercase;
+            background-size: 200% auto;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 30px;
+            display: block;
+            color: white; 
+            margin: 0;
+            position: absolute;
+            left: 19.7%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-color: rgb(40, 169, 255);
+            border-style: none;      
+            width: 160px;
+            height: 50px;
+            margin-top: 50px;
+            transition: 0.5s;
+            margin-top: 60px;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
         }
     </style>
-<title>Eldorran</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description"
-content="Quality Education for your child, from the comfort of your home.">
-<style>
-    body {background-color:#03acf0;background-image:url(https://images.hdqwalls.com/wallpapers/misty-mountains-abstract-5k-27.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-    h1{
-        text-align:center;font-family:'Trebuchet MS', sans-serif, serif;;letter-spacing: px;color:#FFFFFF;font-size:90px;}
-    p {
-        text-align:center;font-family:Times, serif;font-size:30px;font-style:normal;font-weight:normal;color:#FFFFFF;}
-    button{
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        color: white;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background-color: rgb(28, 102, 84);
-        border-style:solid;
-        border-radius: 10px;        
-        width: 150px;
-        height: 40px;
-        margin-top: 30px;
-        transition: background-color 0.15s;
-        
-    }
-    button:hover{
-        background-color: rgb(3, 31, 20);
-        border-width: 2px;
-    }
-</style>
-</head>
+    </head>
 
-<body style="color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee"
-vlink="#551a8b">
+    <body style="background-color: black;" alink="#ee0000" link="#0000ee" vlink="#551a8b">
 
-<h1 style="color: rgb(167, 244, 255); background-color: transparent;">Eldorran</h1>
-<p>
-    Uniting young minds to innovate, inspire and become a citizen of the
-future. Our institution provides your child with the quality education
-from the comfort of your home, while also focusing on their best points
-for their future careers. With us, your child is in great hands.</p>
-</p>
+        <div class="left">
+            <img class="web-logo" src="logo.png">
+            <p class="heading">SRM Launchapd</p>
+            <a target="_blank" href="https://www.instagram.com/dinonomous">
+                <img class="insta" src="insta-logo.png">
+            </a>
+            <a target="_blank" href="https://github.com/dinonomous">
+                <img class="git" src="git-logo.jpg">
+            </a>
+        </div>
+
+        <div class="left-body">
+            <p class="prob">PROBLEMS?</p>
+            <p class="cum">Come To Me!</p>
+            <p class="desc">Your personalized path to success</p>
+            <a href="subject_selection">
+                <button type="button" name="button1" value="Contact Us">
+                    Choose your subject
+                </button>
+            </a>
+        </div>
+
+        <img class="web-bg" src="background_image.jpg">
 
 
-  <center><img src="https://images.pexels.com/photos/249360/pexels-photo-249360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg" alt="error" class="center" style="width:700px; height:500px;"></center>
 
 
-    <a href="subject_selection"><button type="button" name="button1" value="Contact Us">
-    Choose your subject</button></a>
-</body>
+
+
+
+    </body>
 </html>
